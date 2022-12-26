@@ -1,6 +1,7 @@
 exports.handler = async () => {
+  const mySecret = process.env.MY_SECRET;
   return {
     statusCode: 200,
-    body: "<h2>hello world!</h2>",
+    body: `This is ${mySecret}`,
   };
 };
